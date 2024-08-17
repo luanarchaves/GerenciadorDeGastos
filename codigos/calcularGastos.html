@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calcularGastos.css">
+    <title>Calcular Gastos</title>
+
+</head>
+<body>
+
+    <div class="container">
+    <h1>Gerenciador de Gastos Pessoais</h1>
+    <p>Adicione seus gastos e ganhos na listra a baixo, entenda que gastos pode ser suas contas <br>pessoais e ganhos seu salário</p>
+
+    <label>No que voce gastou?</label>
+    <input type="text" id="motivo" placeholder="Exemplo: Comida">
+    
+    <label>Quanto voce gastou em reais?</label>
+    <input type="text" id="value" placeholder="Exemplo: 15.45">
+
+    <label>Quando voce gastou?</label>
+    <input style="text-align: center; width: 150px;" type="date" id="date">
+
+    <div class="container2">
+        <button onclick="addGasto()" style="background-color: rgb(248, 71, 71);">Adicionar gasto</button>
+        <button onclick="remove()">Remover ultimo</button>
+        <button onclick="resetar()">Resetar</button>
+    </div>
+
+    <fieldset>
+    <p>Gastos fixos: <br> Faculdade: 169 reais </p>
+    <p>Salário: 1.306 reais</p>
+
+    <p id="viewSaldo">Saldo: 489.60</p>
+    <div class="listra" id="viewListra"></div>
+   
+    </fieldset>
+    </div>
+
+    <script async type="text/javascript" src="index.js"></script>
+</body>
+</html>
